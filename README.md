@@ -33,17 +33,19 @@ This project was put together using create-react-app (CRA). You will not need to
 
 ---
 
-- [] `App`
-  - () Set searchState
-    - () Pass props: searchState and setSearchState for Search
-  - () Set postState
-    - () Pass props: postState ("Data") and likePost() for Posts
-  - () Create likePosts() fxn + map statement
+- [x] `App`
+  - (x) Set searchState
+    - (x) Pass props: searchState and setSearchState for Search
+  - (x) Set postState
+    - (x) Pass props: postState ("Data") and likePost() for Posts
+  - (x) Set toggleState
+    - (-) Pass props: toggleState to 'Post' for 'LikeSection'
+  - ()x Create likePosts() fxn + map statement
   - [x] `PostHeader`
   - [] `PostCards`
     - () map postState
-      - render 'Post' element
-      - Pass post and likePost() props
+      - () render 'Post' element
+      - () Pass post and likePost() props
   - [] `Post`
     - () Pass props: likePost() invoked with "data.id", numberOfLikes with "data.likes" for LikesSection
     - () Pass props: comments as "data.comments"
@@ -58,6 +60,8 @@ This project was put together using create-react-app (CRA). You will not need to
 - [] `Searchbar`
   - () Create on change listener for input
   - () Create filter statment that updates state with input result?
+
+- [] Change all posts data to 'data'
 
 Your project should end up looking like [this](https://tk-assets.lambdaschool.com/228297b1-2407-4e39-9704-3926767e4ac7_insta-clone.png)
 
