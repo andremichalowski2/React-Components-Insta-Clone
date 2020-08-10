@@ -49,10 +49,10 @@ This project was put together using create-react-app (CRA). You will not need to
   - [x] `Post`
     - (x) Pass props: likePost() invoked with "data.id", numberOfLikes with "data.likes" for LikesSection
     - (x) Pass props: comments as "data.comments"
-    - [] `Comments`
-      - () Map over 'comments' passed
-        - () Render 'comment'
-          - () Pass comment as "index" at comment
+    - [x] `Comments`
+      - (x) Map over 'comments' passed
+        - (x) Render 'comment'
+          - (x) Pass comment as "index" at comment
       - [] `Comment`
     - [] `LikeSection`
       - () Update p tag for Like number using numberOfLikes
