@@ -53,15 +53,16 @@ This project was put together using create-react-app (CRA). You will not need to
       - (x) Map over 'comments' passed
         - (x) Render 'comment'
           - (x) Pass comment as "index" at comment
-      - [] `Comment`
-    - [] `LikeSection`
-      - () Update p tag for Like number using numberOfLikes
-      - () Create onClick listener for like button using likePost()
+      - [x] `Comment`
+    - [x] `LikeSection`
+      - (x) Update p tag for Like number using numberOfLikes
+      - (x) Create onClick listener for like button using likePost()
 - [] `Searchbar`
   - () Create on change listener for input
   - () Create filter statment that updates state with input result?
 
 - [] Change all posts data to 'data'
+- [] Reminder to ask Zoe about ^, search, +counter
 
 Your project should end up looking like [this](https://tk-assets.lambdaschool.com/228297b1-2407-4e39-9704-3926767e4ac7_insta-clone.png)
 

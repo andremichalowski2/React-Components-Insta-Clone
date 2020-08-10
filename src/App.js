@@ -9,19 +9,26 @@ import "./App.css";
 const App = () => {
   const [posts, setPosts] = useState(dummyData);
   // const [searchBar, setSearchBar] = useState(searchBar);
-  const [liked, setLiked] = useState(false);
+  const [liked, setLiked] = useState(0);
 
   const likePost = (postId, liked) => {
     setPosts(
       posts.map((i) => {
         if (i.id === postId) {
-          if(liked) {
+          if (liked = 0) {
             i.likes = i.likes + 1;
-            setLiked(true);
-          } else {
+            setLiked(liked = 1);
+          } else if (liked = 1) {
             i.likes = i.likes - 1;
-            setLiked(false);
+            setLiked(liked = 0);
           }
+          // if(liked === true) {
+          //   i.likes = i.likes + 1;
+          //   setLiked(!liked);
+          // } else if (liked === false) {
+          //   i.likes = i.likes - 1;
+          //   setLiked(!liked);
+          // }
         }
         return i;
       })
@@ -31,7 +38,7 @@ const App = () => {
   return (
     <div className="App">
       {/* <SearchBar searchBar={searchBar} setSearchBar={setSearchBar} /> */}
-      <PostCards likePost={likePost} posts={posts}/>
+      <PostCards likePost={likePost} posts={posts} />
     </div>
   );
 };
