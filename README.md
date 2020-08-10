@@ -42,10 +42,10 @@ This project was put together using create-react-app (CRA). You will not need to
     - (-) Pass props: toggleState to 'Post' for 'LikeSection'
   - ()x Create likePosts() fxn + map statement
   - [x] `PostHeader`
-  - [] `PostCards`
-    - () map postState
-      - () render 'Post' element
-      - () Pass post and likePost() props
+  - [x] `PostCards`
+    - (x) map postState
+      - (x) render 'Post' element
+      - (x) Pass post and likePost() props
   - [] `Post`
     - () Pass props: likePost() invoked with "data.id", numberOfLikes with "data.likes" for LikesSection
     - () Pass props: comments as "data.comments"
