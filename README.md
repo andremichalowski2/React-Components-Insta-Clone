@@ -46,9 +46,9 @@ This project was put together using create-react-app (CRA). You will not need to
     - (x) map postState
       - (x) render 'Post' element
       - (x) Pass post and likePost() props
-  - [] `Post`
-    - () Pass props: likePost() invoked with "data.id", numberOfLikes with "data.likes" for LikesSection
-    - () Pass props: comments as "data.comments"
+  - [x] `Post`
+    - (x) Pass props: likePost() invoked with "data.id", numberOfLikes with "data.likes" for LikesSection
+    - (x) Pass props: comments as "data.comments"
     - [] `Comments`
       - () Map over 'comments' passed
         - () Render 'comment'
