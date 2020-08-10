@@ -6,22 +6,25 @@ import PostCards from "./components/Posts/PostCards";
 import dummyData from "./dummy-data";
 import "./App.css";
 
+import Test from "./components/Posts/Test";
+
 const App = () => {
   const [posts, setPosts] = useState(dummyData);
   // const [searchBar, setSearchBar] = useState(searchBar);
-  const [liked, setLiked] = useState(0);
+  // const [liked, setLiked] = useState(true);
 
-  const likePost = (postId, liked) => {
+
+  const likePost = (postId, liked, index) => {
     setPosts(
-      posts.map((i) => {
-        if (i.id === postId) {
-          if (liked = 0) {
-            i.likes = i.likes + 1;
-            setLiked(liked = 1);
-          } else if (liked = 1) {
-            i.likes = i.likes - 1;
-            setLiked(liked = 0);
-          }
+      posts.map((data, liked, index) => {
+        if (data.id === postId) {
+          // if (liked = 0) {
+          //   i.likes = i.likes + 1;
+          //   setLiked(liked = 1);
+          // } else if (liked = 1) {
+          //   i.likes = i.likes - 1;
+          //   setLiked(liked = 0);
+          // }
           // if(liked === true) {
           //   i.likes = i.likes + 1;
           //   setLiked(!liked);
@@ -29,14 +32,22 @@ const App = () => {
           //   i.likes = i.likes - 1;
           //   setLiked(!liked);
           // }
+          // {
+          //   liked
+          //     ? (data.likes = data.likes - 1)
+          //     : (data.likes = data.likes + 1);
+          // }
+          // console.log(liked);
+          // setLiked(true);
         }
-        return i;
+        return data;
       })
     );
   };
 
   return (
     <div className="App">
+      <Test />
       {/* <SearchBar searchBar={searchBar} setSearchBar={setSearchBar} /> */}
       <PostCards likePost={likePost} posts={posts} />
     </div>
@@ -44,3 +55,4 @@ const App = () => {
 };
 
 export default App;
+
